@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <style>
 a{
@@ -30,7 +31,7 @@ a:hover{
     <div class="main" >
         <div id="header">
             <div class="nav" style="padding-top:30px ;">
-                <div><a href="./index.html"><img src="./mainlogo.png" alt="food app" style="width: 90%;" ></a></div>
+                <!-- <div><a href="./index.html"><img src="./mainlogo.png" alt="food app" style="width: 90%;" ></a></div> -->
             
                 <ul>
                    
@@ -39,25 +40,27 @@ a:hover{
                     <li><a href="cart.html">Cart</a><sup></sup></li>
                     <li><a href="login.html">Login</a></li>
                     <li><a href="signup.html">SignUp</a></li>
+           <li>
+           <div id="searchid"><input type="search" placeholder="Search Your food" id="search" ><a href="./country.html" id="other"><i class="fa-solid fa-arrows-rotate"></i></a></div>
+
+           </li>
                 </ul>
             </div>
         </div>
 
         <div class="searchSection">
-            <h1>Search your <span>Favorite Food</span></h1>
-           <div><input type="search" placeholder="Search Your food" id="search" ><a href="./country.html" id="other"><i class="fa-solid fa-arrows-rotate"></i></a></div>
-            <button id="searchBtn">Search</button>
+            <h1 style="font-family: 'Tangerine', serif; font-size: 58px; text-shadow: 4px 4px 4px #aaa;font-weight: 600;"><pre>EAT DRINK VISIT</pre></h1>
+        
             
         </div>
 
     </div>
 
+<div class="foodsection">  <div class="foodShow">
 
-    <div class="foodShow">
-
-        <h1>Your <span>Favorite Food</span></h1>
-        <div id="show"></div>
-    </div>
+    <h1 style="color:white;">Your <span>Favorite Food</span></h1>
+    <div id="show"></div>
+</div></div>
       
 </body>
 </html>

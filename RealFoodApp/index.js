@@ -1,8 +1,11 @@
 
-document.querySelector('#searchBtn').addEventListener('click', function(e) {
-    e.preventDefault();
+document.getElementById('searchid').addEventListener('keydown', function(e) {
+    if(e.code=='Enter'){
+        getData();
 
-    getData();
+    }
+
+    
 
 });
 
@@ -63,6 +66,7 @@ const append =(data)=>{
         div2.classList.add('text')
         let p = document.createElement('h3');
         p.innerHTML = el.strMeal;
+        p.style.color = 'orange';
 
         let p2 = document.createElement('p');
         p2.innerHTML =`<i class="fa-solid fa-heart"></i>`
